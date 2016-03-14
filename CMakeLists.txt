@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 2.8)
+project( pds )
+find_package( OpenCV REQUIRED )
+add_executable( pds pds.cpp )
+target_link_libraries( pds ${OpenCV_LIBS} lept tesseract)
